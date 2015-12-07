@@ -3,7 +3,7 @@
 var express = require("express"),
               app = express(),
              port = 3001,
-         voting  = require(__dirname + '/app/voting.js');
+         voting  = require('./lib/voting.js');
              
 app.set('port', process.env.PORT || port);
 // set up handlebars view engine
@@ -29,8 +29,7 @@ app.get("/", function( req, res ) {
 
 app.get("/about", function( req, res ) {
  console.log(voting);
-   var randomFortune = voting[Math.floor(Math.random() * voting.length)];
-   res.render("about", { fortune: randomFortune })
+   res.render("about", { fortune: voting.getFortune() })
 });
 
 // custom 404 page
