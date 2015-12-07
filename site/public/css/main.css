@@ -1,0 +1,378 @@
+﻿/* TABLE OF CONTENTS
+
+    1. Basic Document Styles
+    2. Typography
+    3. Header
+    4. Button
+    5. Twitch TV
+    6. Footer
+    7. Sticky footer styles
+    8. Media Queries
+ 
+*/
+/* 1. Basic Document Styles
+-------------------------------------------------*/
+
+html * {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+html {  font-size: 100%;  }
+
+body {
+    overflow-x: hidden;
+    font-family: 'Roboto', 'Helvetica', sans-serif;
+    font-weight: 400;
+    color: rgba(0, 0, 0, .87);
+    font-size: 14px;
+    font-size: 0.875rem;
+    line-height: 20px;
+    line-height: 1.25rem;
+    text-align: center;
+}
+h1 {
+    font-size: 112px;
+    font-size: 7rem;
+    color: rgba(0,0,0,.54);
+    font-family: 'Roboto', 'Helvetica', sans-serif;
+    font-weight: 300;
+}
+h2 {
+    font-size: 56px;
+    font-size: 3.5rem;
+    color: rgba(0,0,0,.54);
+    font-family: 'Roboto', 'Helvetica', sans-serif;
+    font-weight: 400;
+}
+h3 {
+    font-size: 45px;
+    font-size: 2.8rem;
+    color: rgba(0,0,0,.54);
+    font-family: 'Roboto', 'Helvetica', sans-serif;
+    font-weight: 400;
+    line-height: 48px;
+    line-height: 3rem;
+}
+h4 {
+    font-size: 34px;
+    font-size: 2.1rem;
+    color: rgba(0,0,0,.54);
+    font-family: 'Roboto', 'Helvetica', sans-serif;
+    font-weight: 400;
+    line-height: 40px;
+    line-height: 2.5rem;
+}
+h5 {
+    font-size: 24px;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: rgba(0,0,0,.87);
+    line-height: 32px;
+    line-height: 2rem;
+}
+h6 {
+    font-size: 20px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: rgba(0,0,0,0.87);
+}
+caption {
+    font-size: 12px;
+    font-size: 0.7rem;
+    color: rgba(0,0,0,0.54);
+}
+button {
+    font-weight: 500;
+    font-family: 'Roboto', 'Helvetica', sans-serif;
+    font-size: 14px;
+    font-size: 0.8rem;
+    color: rgba(0,0,0,0.87);
+    text-transform: uppercase;
+}
+nav {
+    background-color: #009688;
+    color: #000;
+    text-transform: uppercase;
+}
+i {
+    padding: 0 5px;
+    font-size: 45px;
+    font-size: 2.8rem;
+    color: #69f0ae;   
+}
+img {  display: block;  }
+
+section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    height: 1000px;
+}
+a {  color: #9c27b0;  }
+
+header { 
+    height: 400px;
+    background-color: #00bcd4;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin-bottom: 60px;
+}
+
+/* 2. Typography 
+-------------------------------------------------*/
+
+.primary-color { color: #00bcd4;  }
+
+.primary-color100 {  color: #b2ebf2;  }
+
+.primary-color700 {  color: #0097a7;  }
+
+.accent-color {  color: #69f0ae;  } 
+
+.accent-100 {  color: #b9f6ca;  }
+
+.accent-400 {  color: #00E676;  }
+
+.base-black {  color: #000;  }
+
+.text-primary-black {
+    color: #000;
+    opacity: .87;
+}
+.secondary-text-black {
+    color: #000;
+    opacity: .54;
+}
+.disabled-text-black {
+    color: #000;
+    opacity: .38;
+}
+.dividers-black {
+    color: #000;
+    opacity: .12;
+}
+.base-white {  color: #fff;  }
+
+.text-primary-white {  color: #fff;  }
+
+.secondary-text-white {
+    color: #fff;
+    opacity: .70;
+}
+.disabled-text-white {
+    color: #fff;
+    opacity: .30;
+}
+.dividers-white {
+    color: #000;
+    opacity: .12;
+}
+
+/* 3. Header
+-------------------------------------------------*/
+
+.header-logo {
+  display: inline-block;
+}
+
+/* 4. Button
+-------------------------------------------------*/
+
+.btn {
+    min-width: 64px;
+    min-height: 36px;
+    /* padding: 0 8px; */
+    margin: 8px;
+    letter-spacing: 1px;
+    background-color: #69f0ae;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
+    border: 0 none;
+    border-radius: none;   
+}
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus {
+    outline: 0 none;
+    box-shadow: 0 0 8px rgba(0,0,0,.18), 0 8px 16px rgba(0,0,0,.36);
+}
+.btn-primary {
+    color: #ffffff;
+    background: #69f0ae;
+}
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.open > .dropdown-toggle.btn-primary {
+    background: #00e676;
+}
+.btn-primary:active,
+.btn-primary.active {
+    background: #00e676;
+    box-shadow: 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12), 0 2px 4px -1px rgba(0,0,0,.2);
+}
+.btn-primary.active.focus,
+.btn-primary.active:focus,
+.btn-primary.active:hover,
+.btn-primary:active.focus,
+.btn-primary:active:focus,
+.btn-primary:active:hover,
+.open>.dropdown-toggle.btn-primary.focus,
+.open>.dropdown-toggle.btn-primary:focus,
+.open>.dropdown-toggle.btn-primary:hover {
+    background: #69f0ae;
+    box-shadow: 0 4px 5px 0 rgba(0,0,0,.14), 0 1px 10px 0 rgba(0,0,0,.12), 0 2px 4px -1px rgba(0,0,0,.2);
+}
+/* 5.Twitch TV 
+---------------------------------------*/
+.fa {
+  padding: 0 5px;
+  font-size: 45px;
+  font-size: 2.8rem;
+  color: #69f0ae; 
+}
+
+.marketing .col-lg-4 {
+  margin-bottom: 20px;
+}
+
+/* 6. Footer
+---------------------------------------*/
+
+footer {  background-color: #fafafa;  }
+
+footer .container {  padding: 16px;  }
+
+footer ul {  padding-left: 0;  }
+
+footer ul li {
+    float: left;
+    margin-right: 10px;   
+    display: block;
+    list-style: none;
+}
+
+footer ul li a:active,
+footer ul li a:hover {
+    color: #ff3d00;
+}
+
+.footer-top-section {  height: 25px;  }
+
+.footer-bottom-section {
+    margin-top: 10px;
+    margin-top: 0.714rem;
+}
+
+/* 7. Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #f5f5f5;
+}
+
+/*
+*   Form
+*/
+.form label {
+  text-align: left;
+}
+
+.form-control.ng-invalid.ng-touched {
+  -moz-box-shadow:    inset 0 0 10px #ff0000;
+   -webkit-box-shadow: inset 0 0 10px #ff0000;
+   box-shadow:         inset 0 0 10px #ff0000;
+}
+
+.form-control.ng-valid.ng-touched {
+  -moz-box-shadow:    inset 0 0 10px #00ff00;
+  -webkit-box-shadow: inset 0 0 10px #00ff00;
+  box-shadow:         inset 0 0 10px #00ff00;
+}
+
+/*
+*  Github Login Button
+*/
+#login-btn {}
+
+.login-btn-img { display: inline-block; }
+
+.login-btn-text {
+  text-transform: capitalize;
+  color: #fff;
+}
+
+
+/* 8. Media Queries
+------------------------------ */
+@media (max-width: 400px){
+    h1 {
+        /* font-size: 96px;
+        font-size: 6rem; */
+        font-size: 48px;
+        font-size: 3rem;
+    }
+    
+    h2 {
+       /*  font-size: 48px;
+        font-size: 3rem; */
+       font-size:33.6px;
+       font-size: 2.1rem;
+    }
+    
+    h3 {
+       /* font-size:33.6px;
+       font-size: 2.1rem; */
+      font-size: 32px;
+      font-size: 2rem
+    }
+    
+    h4 {
+      font-size: 32px;
+      font-size: 2rem
+    }
+    
+    i {
+      font-size: 32px;
+      font-size: 2rem;
+    }
+    
+    /*-- Heading --*/
+    .fa {
+      font-size: 32px;
+      font-size: 2rem;
+    }
+}
+@media (max-width: 330px) {
+    .button_icons_only {  display: block;  }
+    
+    .button_words {  display: none;  }
+    
+    h1{ font-size: 3rem; }
+    
+}
+@media (min-width: 410px) and (max-width: 768px) {
+    .time-length-container {  width: 50%;  }
+    
+    .time-length-container button {  margin: 0;  }
+    
+}
+
+@media (max-width: 800px) {
+    body {
+        font-size: 18px;
+        font-size: 1rem;
+    }
+
+}
